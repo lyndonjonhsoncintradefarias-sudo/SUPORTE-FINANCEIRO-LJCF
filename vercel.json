@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "name": "suporte-financeiro-ljcf",
+  "builds": [
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ],
+  "analytics": {
+    "enable": true
+  }
+}
